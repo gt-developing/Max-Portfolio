@@ -1,4 +1,8 @@
 import { useState } from 'react'
+import React from 'react';
+import Spline from './components/spline';
+import Navbar from './components/Navbar'
+import Presentation from './components/Presentation';
 
 import './App.css'
 
@@ -6,7 +10,9 @@ function App() {
 
   return (
     <>
-     <h1>Hola</h1>
+      <Navbar />
+     <Spline />
+     <Presentation />
     </>
   )
 }

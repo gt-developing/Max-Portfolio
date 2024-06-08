@@ -1,0 +1,23 @@
+.pre-container {
+   height: 100vh;
+   display: flex;
+   padding: 2rem 10rem;
+   align-items: center;
+}
+
+.info {
+    max-width: 500px;
+}
+
+.info h1 {
+    padding-bottom: 1rem;
+}
+
+
+
+
+@media (max-width: 910px) {
+    .pre-container {
+        padding: 2rem 2rem;
+    }
+}
