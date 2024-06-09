@@ -31,9 +31,9 @@ const Navbar = () => {
             <button className='menu-button'><FaBars /></button>
           </DropdownTrigger>
           <DropdownMenu className='menu-dropdown'>
-            <DropdownItem className='item' key="new"><Link to="/">AA</Link></DropdownItem>
-            <DropdownItem className='item' key="copy">Proyectos</DropdownItem>
-            <DropdownItem className='item' key="edit">Contacto</DropdownItem>
+            <DropdownItem className='item' key="new"><Link to="/">Sobre mi</Link></DropdownItem>
+            <DropdownItem className='item' key="copy"><Link to="/proyects">Proyectos</Link></DropdownItem>
+            <DropdownItem className='item' key="edit"><Link to="/contact">Proyectos</Link></DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </div>

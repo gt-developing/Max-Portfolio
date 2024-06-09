@@ -47,7 +47,7 @@
     border: none;
     font-size: 1.4rem;
     transition: .3s ease-in-out all;
-    
+    outline: none;
 }
 
 .menu-button:hover {
@@ -66,30 +66,26 @@
     cursor: pointer;
     min-width: 200px;
     margin-top: 10px;
+    
 }
 
-.menu-dropdown li {
+.menu-dropdown a {
     text-align: left;
     align-items: center;
     border-radius: 4px;
     color: #ffffffcf;
     padding: .3rem;
-    transition: .1s ease-in-out all;
+    transition: .3s ease-in-out all;
+    display: block;
+    text-decoration: none;
 }
 
-.menu-dropdown li:hover {
+.menu-dropdown a:hover {
    background-color: #232735;
    color: white;
 }
 
-.menu-dropdown a {
-    text-decoration: none;
-    color: #ffffffcf;
-}
 
-.menu-dropdown a:hover {
-    color: white;
-}
 
 @media (max-width: 910px) {
     .navbar {
