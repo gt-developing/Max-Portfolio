@@ -40,3 +40,13 @@
         padding: 2rem 2rem;
     }
 }
+
+@media (max-width: 540px) {
+    .navbar {
+        padding: 2rem 2rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
