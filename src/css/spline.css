@@ -7,3 +7,8 @@
     z-index: -1;
   }
 
+  @media (max-width: 910px) {
+    .spline-container {
+      display: none;
+    }
+}
