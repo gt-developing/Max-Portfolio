@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className='logoName-container'>
         <img src={logo} alt="Logo" className="logo" />
         <div NameAndDescription>
-          <h3>Max</h3>
+          <h3>Alexis Maximiliano</h3>
           <p>Software Developer</p>
         </div>
       </div>
