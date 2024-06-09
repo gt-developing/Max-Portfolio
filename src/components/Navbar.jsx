@@ -25,7 +25,7 @@ const Navbar = () => {
         <li><a href="#contact">Contacto</a></li>
       </ul>
 
-      <div className='menu-visible'>
+      
         <Dropdown>
           <DropdownTrigger className='menu-trigger'>
             <button className='menu-button'><FaBars /></button>
@@ -36,7 +36,7 @@ const Navbar = () => {
             <DropdownItem className='item' key="edit"><Link to="/contact">Contacto</Link></DropdownItem>
           </DropdownMenu>
         </Dropdown>
-      </div>
+    
 
     </div>
 

@@ -35,9 +35,7 @@
     text-align: left;
 }
 
-.menu-visible {
-    display: none;
-}
+
 
 .menu-button {
     background: transparent;
@@ -47,7 +45,8 @@
     border: none;
     font-size: 1.4rem;
     transition: .3s ease-in-out all;
-    outline: none;
+    
+    display: none;
 }
 
 .menu-button:hover {
@@ -102,7 +101,7 @@
         display: none;
     }
 
-    .menu-visible {
+    .menu-button {
         display: block;
     }
 }
