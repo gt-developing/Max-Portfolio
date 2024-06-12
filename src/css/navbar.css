@@ -55,7 +55,11 @@
     align-items: center;
     gap: 20px;
     cursor: pointer;
-    
+    transition: .3s ease-in-out all;
+}
+
+.logoName-container:hover {
+    transform: scale(1.03);
 }
 
 .logoName-container:hover .logo {
@@ -92,6 +96,7 @@
 .menu-button:hover {
    transform: scale(1.1);
    color: white;
+   
 }
 
 .menu-dropdown ul {

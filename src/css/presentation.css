@@ -35,7 +35,7 @@
 
 section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     padding: 2rem 10rem;
@@ -58,6 +58,10 @@ section {
     
   }
 
+  .projects h1 {
+    margin-bottom: 2rem;
+  }
+
   .background {
     position: absolute;
     top: 0;
@@ -68,6 +72,53 @@ section {
     z-index: -2;
   }
 
+  .projects-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+  }
+
+  .card {
+    flex: 1 0 250px;
+    min-width: 300px;
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .date-links {
+    color: #ffffffb6;
+    text-align: right;
+    gap: 20px;
+  }
+
+  .date-links a {
+    text-decoration: none;
+    color: #ffffffb6;
+    font-size: 0.8rem;
+  }
+
+  .card-links {
+    display: flex;
+    align-items: center;
+   
+    gap: 7px;
+  }
+
+  img {
+   width: 100%;
+   transition: .3s ease-in-out all;
+   box-shadow: rgba(255, 255, 255, 0.133) 0px 0.60219px 0.60219px -1.16667px, rgba(28, 29, 33, 0.12) 0px 2.28853px 2.28853px -2.33333px, rgba(28, 29, 33, 0.06) 0px 10px 10px -3.5px, rgba(223, 224, 225, 0.3) 0px 0px 0px 0px; 
+   margin-bottom: 1rem;
+  }
+
+  img:hover {
+    transform: scale(1.03);
+  }
 
 @media (max-width: 910px) {
     section {

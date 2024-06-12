@@ -45,8 +45,8 @@ const Navbar = () => {
       </div>
 
       <ul className="nav-links">
-        <li><a href="#about">Sobre Mí</a></li>
         <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#about">Sobre Mí</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
 
@@ -56,9 +56,9 @@ const Navbar = () => {
             <button className='menu-button'><FaBars /></button>
           </DropdownTrigger>
           <DropdownMenu className='menu-dropdown'>
-            <DropdownItem className='item' key="new"><Link to="/">Sobre mi</Link></DropdownItem>
-            <DropdownItem className='item' key="copy"><Link to="/proyects">Proyectos</Link></DropdownItem>
-            <DropdownItem className='item' key="edit"><Link to="/contact">Contacto</Link></DropdownItem>
+            <DropdownItem className='item' key="new"><a href="#projects">Proyectos</a></DropdownItem>
+            <DropdownItem className='item' key="copy"><a href="#about">Sobre mi</a></DropdownItem>
+            <DropdownItem className='item' key="edit"><a href="#contact">Contacto</a></DropdownItem>
           </DropdownMenu>
         </Dropdown>
     
