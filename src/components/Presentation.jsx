@@ -1,6 +1,8 @@
 import React from 'react';
 
 import graffpreview from "../assets/graffpreview.png"  
+import todopreview from "../assets/todopreview.png"
+import weatherpreview from "../assets/weatherpreview.png"
 
 import "../css/presentation.css"
 import { FaGithub, FaInstagram } from "react-icons/fa";
@@ -62,32 +64,32 @@ const Presentation = () => {
 
           
           <div className='card'>
-            <a href="https://grafftest.netlify.app">
-              <img src={graffpreview} alt="" />
+            <a href="https://webappclimabygtdev.netlify.app">
+              <img src={weatherpreview} alt="" />
             </a>
             <div className='info-container'>
             <div className='name-description'>
-              <h3>Graff</h3>
-              <p>Tienda en linea</p>
+              <h3>Weather</h3>
+              <p>App del clima</p>
             </div>
             <div className='date'>
-              <p>2024</p>
+              <p>2022</p>
             </div>
             </div>
           </div>
 
           
           <div className='card'>
-            <a href="https://grafftest.netlify.app">
-              <img src={graffpreview} alt="" />
+            <a href="https://todolistbygtdev.netlify.app">
+              <img src={todopreview} alt="" />
             </a>
             <div className='info-container'>
             <div className='name-description'>
-              <h3>Graff</h3>
-              <p>Tienda en linea</p>
+              <h3>To do</h3>
+              <p>App de tareas pendientes</p>
             </div>
             <div className='date'>
-              <p>2024</p>
+              <p>2022</p>
             </div>
             </div>
           </div>
