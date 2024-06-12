@@ -9,9 +9,13 @@ const Presentation = () => {
     
     <div className='pre-container'>
 
+    <section>
+      <div className='background'>
+        <div id='stars'></div>
+      <div id='stars2'></div>
+      </div>
     
-
-        <div className='info'>
+      <div className='info'>
             <h1>Hola, soy Max</h1>
             <p>Desarrollador web especializado en crear aplicaciones modernas y eficientes con React y Node.js. Apasionado por el diseño funcional y la experiencia del usuario.</p>
             <div className='redes'>
@@ -23,6 +27,22 @@ const Presentation = () => {
              
             </div>
         </div>
+    </section>
+
+        
+
+
+        <section className='projects'>
+          <h1>Proyectos</h1>
+        </section>
+        
+        <section className='about'>
+          <h1>Sobre mi</h1>
+        </section>
+
+        <section className='contact'>
+          <h1>Contacto</h1>
+        </section>
 
     </div>
     

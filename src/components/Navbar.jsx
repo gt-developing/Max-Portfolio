@@ -1,20 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import logo from "../assets/svanna-logo.jpg"
 import "../css/navbar.css"
 
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownSection, DropdownItem } from "@nextui-org/dropdown";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { FaBars } from "react-icons/fa";
 
+
+
 const Navbar = () => {
+
+  const [isHidden, setIsHidden] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        // Scroll hacia abajo
+        setIsHidden(true);
+      } else {
+        // Scroll hacia arriba
+        setIsHidden(false);
+      }
+
+      setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop); // Para evitar números negativos
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollTop]);
+
   return (
-    <div className="navbar">
+    <div className={`navbar ${isHidden ? 'hidden' : ''}`}>
       <div className='logoName-container'>
         <img src={logo} alt="Logo" className="logo" />
         <div NameAndDescription>
-          <h3>Alexis Maximiliano</h3>
+          <h3>Alexis Maximiliano </h3>
           <p>Software Developer</p>
         </div>
       </div>
