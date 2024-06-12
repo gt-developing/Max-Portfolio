@@ -52,7 +52,6 @@
 
 .logoName-container {
     display: flex;
-    align-items: center;
     gap: 20px;
     cursor: pointer;
     transition: .3s ease-in-out all;
