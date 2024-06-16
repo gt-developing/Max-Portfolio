@@ -62,6 +62,7 @@ section {
 
   .section-title {
     margin-bottom: 4rem;
+    text-align: center;
   }
 
   .tags {
@@ -87,9 +88,24 @@ section {
   }
 
   .tech-container {
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    
+  }
+
+  .tech-scroll {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    animation: scroll 40s linear infinite;
+    width: max-content;
+    padding-bottom: 1rem;
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
     
   }
 
@@ -103,6 +119,9 @@ section {
     transition: .3s;
     font-size: 1.2rem;
     cursor: default;
+    height: 50px;
+    width: 100%;
+    
   }
 
   .tech-card:hover {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import graffpreview from "../assets/graffpreview.png";
 import todopreview from "../assets/todopreview.png";
 import weatherpreview from "../assets/weatherpreview.png";
-import portfoliopreview from "../assets/portfoliopreview.png"
+import portfoliopreview from "../assets/portfoliopreview.png";
 import npmpreview from "../assets/npmpreview.png";
 
 import "../css/presentation.css";
@@ -24,6 +24,31 @@ const images = {
   portfoliopreview
 };
 
+// Define las tecnologías
+const technologies = [
+  { icon: <FaReact className='icon-card' />, name: 'React' },
+  { icon: <FaBootstrap className='icon-card' />, name: 'Bootstrap' },
+  { icon: <FaSass className='icon-card' />, name: 'Sass' },
+  { icon: <FaHtml5 className='icon-card' />, name: 'HTML5' },
+  { icon: <FaCss3 className='icon-card' />, name: 'CSS3' },
+  { icon: <RiTailwindCssFill className='icon-card' />, name: 'TailwindCSS' },
+  { icon: <FaNodeJs className='icon-card' />, name: 'Node.js' },
+  { icon: <IoLogoFirebase className='icon-card' />, name: 'Firebase' },
+  { icon: <IoLogoJavascript className='icon-card' />, name: 'Javascript' },
+  { icon: <FaPython className='icon-card' />, name: 'Python' },
+  { icon: <GrMysql className='icon-card' />, name: 'MySQL' }
+];
+
+// Función para mezclar un array
+const shuffleArray = (array) => {
+  let shuffledArray = array.slice();
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+};
+
 const Presentation = () => {
   const [projects, setProjects] = useState([]);
 
@@ -31,6 +56,10 @@ const Presentation = () => {
     // Asigna los datos del JSON al estado
     setProjects(projectsData);
   }, []);
+
+  // Duplica y mezcla las tecnologías para el segundo contenedor
+  const duplicatedTechnologies = technologies.concat(technologies);
+  const shuffledTechnologies = shuffleArray(duplicatedTechnologies);
 
   return (
     <div className='pre-container'>
@@ -93,59 +122,27 @@ const Presentation = () => {
       </section>
 
       <section className='tech' id='tech'>
-
-       <div className='section-title'>
-        <h1>Tecnologias</h1>
-        <p>Habilidades</p>
+        <div className='section-title'>
+          <h1>Tecnologias</h1>
+          <p>Habilidades</p>
         </div>
         <div className='tech-container'>
-
-          <div className='tech-card'>
-            <FaReact className='icon-card' />
-            <p>React</p>
+          <div className='tech-scroll'>
+            {duplicatedTechnologies.map((tech, index) => (
+              <div className='tech-card' key={index}>
+                {tech.icon}
+                <p>{tech.name}</p>
+              </div>
+            ))}
           </div>
-          <div className='tech-card'>
-            <FaBootstrap className='icon-card' />
-            <p>Bootstrap</p>
+          <div className='tech-scroll'>
+            {shuffledTechnologies.map((tech, index) => (
+              <div className='tech-card' key={index}>
+                {tech.icon}
+                <p>{tech.name}</p>
+              </div>
+            ))}
           </div>
-          <div className='tech-card'>
-            <FaSass className='icon-card' />
-            <p>Sass</p>
-          </div>
-          <div className='tech-card'>
-            <FaHtml5 className='icon-card' />
-            <p>HTML5</p>
-          </div>
-          <div className='tech-card'>
-            <FaCss3 className='icon-card' />
-            <p>CSS3</p>
-          </div>
-          <div className='tech-card'>
-            <FaNodeJs className='icon-card' />
-            <p>Node.js</p>
-          </div>
-          <div className='tech-card'>
-            <IoLogoFirebase className='icon-card' />
-            <p>Firebase</p>
-          </div>
-          <div className='tech-card'>
-            <IoLogoJavascript className='icon-card' />
-            <p>Javascript</p>
-          </div>
-          <div className='tech-card'>
-            <RiTailwindCssFill className='icon-card' />
-            <p>Tailwind CSS</p>
-          </div>
-          <div className='tech-card'>
-            <FaPython className='icon-card' />
-            <p>Python</p>
-          </div>
-          <div className='tech-card'>
-            <GrMysql className='icon-card' />
-            <p>MySQL</p>
-          </div>
-
-
         </div>
       </section>
 
