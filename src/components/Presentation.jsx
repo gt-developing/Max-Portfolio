@@ -40,14 +40,7 @@ const technologies = [
 ];
 
 // Función para mezclar un array
-const shuffleArray = (array) => {
-  let shuffledArray = array.slice();
-  for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-  }
-  return shuffledArray;
-};
+
 
 const Presentation = () => {
   const [projects, setProjects] = useState([]);
@@ -57,9 +50,7 @@ const Presentation = () => {
     setProjects(projectsData);
   }, []);
 
-  // Duplica y mezcla las tecnologías para el segundo contenedor
-  const duplicatedTechnologies = technologies.concat(technologies);
-  const shuffledTechnologies = shuffleArray(duplicatedTechnologies);
+
 
   return (
     <div className='pre-container'>
@@ -127,8 +118,8 @@ const Presentation = () => {
           <p>Frameworks y herramientas fundamentales de mi día a día en el desarrollo de aplicaciones web.</p>
         </div>
         <div className='tech-container'>
-          <div className='tech-scroll'>
-            {duplicatedTechnologies.map((tech, index) => (
+        <div className='tech-scroll'>
+            {technologies.concat(technologies).map((tech, index) => (
               <div className='tech-card' key={index}>
                 {tech.icon}
                 <p>{tech.name}</p>
@@ -136,7 +127,7 @@ const Presentation = () => {
             ))}
           </div>
           <div className='tech-scroll'>
-            {shuffledTechnologies.map((tech, index) => (
+            {technologies.concat(technologies).map((tech, index) => (
               <div className='tech-card' key={index}>
                 {tech.icon}
                 <p>{tech.name}</p>
@@ -148,11 +139,22 @@ const Presentation = () => {
 
       <section className='contact' id='contact'>
       <div className='section-title'>
-          <h1>¿Interesado?</h1>
-          <p>Frameworks y herramientas fundamentales de mi día a día en el desarrollo de aplicaciones web.</p>
+          <h1>¿Interesado?</h1>  
         </div>
+        <a className='contact-button' target="_blank" href="email:balexismaximiliano@gmail.com">Contactame</a>
       </section>
+      
+      <section className='footer'>
+      <p>Diseñado y desarrollado por <u>Max</u></p>
+      <div className='redes'>
+            <a target='_blank' href="https://github.com/gt-developing"><FaGithub className='icon' /></a>
+            <a target='_blank' href="https://www.instagram.com/max_gtdev/"><FaInstagram className='icon' /></a>
+            <a target='_blank' href="mailto:balexismaximiliano@gmail.com"> <MdEmail className='icon' /></a>
+          </div>
+    </section>
     </div>
+
+    
   );
 }
 

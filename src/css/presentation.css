@@ -56,7 +56,11 @@ section {
     
   }
 
- 
+ .footer {
+  background-color: #0e111c;
+  display: flex;
+  justify-content: space-between;
+ }
 
   .section-title {
     margin-bottom: 4rem;
@@ -104,6 +108,10 @@ section {
     padding-bottom: 1rem;
   }
 
+  .tech-scroll:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
   @keyframes scroll {
     to {
       transform: translate(calc(-50% - 0.5rem));
@@ -130,6 +138,25 @@ section {
     background-color: #ffffffb6;
     color: #0e111c;
     
+  }
+
+  .contact {
+    align-items: center;
+  }
+
+  .contact-button {
+    text-decoration: none;
+    color: white;
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 5px 10px;
+    transition: .3s;
+    font-size: 1.5rem;
+  }
+
+  .contact-button:hover {
+    background-color: #ffffffb6;
+    color: #0e111c;
   }
 
   .background {
