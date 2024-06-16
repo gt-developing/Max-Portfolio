@@ -12,7 +12,7 @@
       "title": "Todo App",
       "description": "Aplicación de lista de tareas",
       "year": "2022",
-      "link": "https://todotest.netlify.app",
+      "link": "https://todolistbygtdev.netlify.app",
       "image": "todopreview",
       "github": "https://github.com/gt-developing/toDoList",
       "tags": ["Javascript", "Sass"]
@@ -21,9 +21,9 @@
       "title": "Weather App",
       "description": "Aplicación del clima",
       "year": "2022",
-      "link": "https://weathertest.netlify.app",
+      "link": "https://webappclimabygtdev.netlify.app",
       "image": "weatherpreview",
-      "github": "https://github.com/gt-developing/toDoList",
+      "github": "https://github.com/gt-developing/Climaapp",
       "tags": ["Javascript", "Sass"]
     }
   ]

@@ -50,7 +50,7 @@ const Presentation = () => {
         <div className='projects-container'>
           {projects.map((project, index) => (
             <div className='card' key={index}>
-              <a href={project.link}>
+              <a target='_blank' href={project.link}>
                 <img src={images[project.image]} alt={project.title} />
               </a>
               <div className='info-container'>
@@ -60,9 +60,9 @@ const Presentation = () => {
                 </div>
                 <div className='date-links'>
                   <div className='links-app'>
-                    <a href={project.link}><FaExternalLinkAlt/></a>
+                    <a target='_blank' href={project.link}><FaExternalLinkAlt/></a>
                     {project.github && (
-                      <a href={project.github}><FaGithub/></a>
+                      <a target='_blank' href={project.github}><FaGithub/></a>
                     )}
                   </div>
                   
