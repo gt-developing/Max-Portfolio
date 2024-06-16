@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import graffpreview from "../assets/graffpreview.png";
-import todopreview from "../assets/todopreview.png";
-import weatherpreview from "../assets/weatherpreview.png";
-import portfoliopreview from "../assets/portfoliopreview.png";
-import npmpreview from "../assets/npmpreview.png";
+import graffpreview from "../assets/graffpreview.webp";
+import todopreview from "../assets/todopreview.webp";
+import weatherpreview from "../assets/weatherpreview.webp";
+import portfoliopreview from "../assets/portfoliopreview.webp";
+import npmpreview from "../assets/npmpreview.webp";
 
 import "../css/presentation.css";
 import { FaPython, FaGithub, FaInstagram, FaExternalLinkAlt, FaReact, FaGitAlt, FaBootstrap, FaSass, FaHtml5, FaCss3, FaNodeJs } from "react-icons/fa";
@@ -124,7 +124,7 @@ const Presentation = () => {
       <section className='tech' id='tech'>
         <div className='section-title'>
           <h1>Tecnologias</h1>
-          <p>Habilidades</p>
+          <p>Frameworks y herramientas fundamentales de mi día a día en el desarrollo de aplicaciones web.</p>
         </div>
         <div className='tech-container'>
           <div className='tech-scroll'>
@@ -147,7 +147,10 @@ const Presentation = () => {
       </section>
 
       <section className='contact' id='contact'>
-        <h1>Contacto</h1>
+      <div className='section-title'>
+          <h1>¿Interesado?</h1>
+          <p>Frameworks y herramientas fundamentales de mi día a día en el desarrollo de aplicaciones web.</p>
+        </div>
       </section>
     </div>
   );
