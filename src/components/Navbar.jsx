@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${isHidden ? 'hidden' : ''}`}>
       <div className='logoName-container'>
-        <img src={logo} alt="Logo" className="logo" />
+        <a href="#"><img src={logo} alt="Logo" className="logo" /></a>
         <div NameAndDescription>
           <h3>Alexis Maximiliano </h3>
           <p>Software Developer</p>
