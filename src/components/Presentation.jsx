@@ -141,7 +141,7 @@ const Presentation = () => {
       <div className='section-title'>
           <h1>¿Interesado?</h1>  
         </div>
-        <a className='contact-button' target="_blank" href="email:balexismaximiliano@gmail.com">Contactame</a>
+        <a className='contact-button' target="_blank" href="mailto:balexismaximiliano@gmail.com">Contactame</a>
       </section>
       
       <section className='footer'>
