@@ -20,8 +20,10 @@
     gap: 20px;
 }
 
-a {
+.icon-href {
     display: flex;
+    text-decoration: none;
+    color: unset;
 }
 
 .nav-links a {

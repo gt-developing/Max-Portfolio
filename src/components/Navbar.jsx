@@ -36,13 +36,14 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${isHidden ? 'hidden' : ''}`}>
+      <a className='icon-href' href="#">
       <div className='logoName-container'>
-        <a href="#"><img src={logo} alt="Logo" className="logo" /></a>
+        <img src={logo} alt="Logo" className="logo" />
         <div NameAndDescription>
           <h3>Alexis Maximiliano </h3>
           <p>Software Developer</p>
         </div>
-      </div>
+      </div></a>
 
       <ul className="nav-links">
         <li><a href="#projects">Proyectos</a></li>
