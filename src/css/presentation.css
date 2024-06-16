@@ -100,7 +100,7 @@ section {
     border: 1px solid;
     border-radius: 7px;
     padding: 5px 10px;
-    transition: .3s ease-in-out all;
+    transition: .3s;
     font-size: 1.2rem;
     cursor: default;
   }
