@@ -59,8 +59,36 @@ section {
   }
 
   .projects h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
   }
+
+  .section-title {
+    margin-bottom: 4rem;
+  }
+
+  .tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .tags p {
+    color: #ffffffb6;
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    cursor:default;
+    transition: .3s ease-in-out all;
+  }
+
+  .tags p:hover {
+    background-color: #ffffffb6;
+    color: #0e111c;
+    transform: scale(0.95);
+  }
+
+  
 
   .background {
     position: absolute;
@@ -75,7 +103,7 @@ section {
   .projects-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px 20px;
     flex-wrap: wrap;
     
   }
@@ -83,6 +111,7 @@ section {
   .card {
     flex: 1 0 250px;
     min-width: 300px;
+   
   }
 
   .info-container {
@@ -90,16 +119,38 @@ section {
     justify-content: space-between;
   }
 
+  .info-container p {
+    color: #ffffffb3;
+  }
+
   .date-links {
     color: #ffffffb6;
     text-align: right;
     gap: 20px;
+    display: flex;
+  }
+
+  .links-app {
+    text-decoration: none;
+    gap: 10px;
+    display: flex;
+    
+  }
+
+  .links-app a {
+    text-decoration: none;
+    color: #ffffffb6;
+    transition: .3s ease-in-out all;
+  }
+
+  .links-app a:hover {
+    color: white;
   }
 
   .date-links a {
-    text-decoration: none;
+    
     color: #ffffffb6;
-    font-size: 0.8rem;
+   
   }
 
   .card-links {
@@ -117,8 +168,22 @@ section {
   }
 
   img:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
   }
+
+  .more {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .more a {
+    
+    color: #95acff;
+    transition: .3s ease-in-out all;
+  }
+
+
 
 @media (max-width: 910px) {
     section {

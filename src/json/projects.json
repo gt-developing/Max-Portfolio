@@ -1,0 +1,29 @@
+[
+    {
+      "title": "Graff",
+      "description": "Tienda en linea",
+      "year": "2024",
+      "link": "https://grafftest.netlify.app",
+      "image": "graffpreview",
+      "github": "",
+      "tags": ["React", "Firebase", "Vite", "Node"]
+    },
+    {
+      "title": "Todo App",
+      "description": "Aplicación de lista de tareas",
+      "year": "2022",
+      "link": "https://todotest.netlify.app",
+      "image": "todopreview",
+      "github": "https://github.com/gt-developing/toDoList",
+      "tags": ["Javascript", "Sass"]
+    },
+    {
+      "title": "Weather App",
+      "description": "Aplicación del clima",
+      "year": "2022",
+      "link": "https://weathertest.netlify.app",
+      "image": "weatherpreview",
+      "github": "https://github.com/gt-developing/toDoList",
+      "tags": ["Javascript", "Sass"]
+    }
+  ]
