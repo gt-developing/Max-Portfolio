@@ -6,7 +6,7 @@
       "link": "https://grafftest.netlify.app",
       "image": "graffpreview",
       "github": "",
-      "tags": ["React", "Firebase", "Vite", "Node"]
+      "tags": ["React", "Firebase", "Vite", "NodeJS"]
     },
     {
       "title": "Todo App",
@@ -25,5 +25,23 @@
       "image": "weatherpreview",
       "github": "https://github.com/gt-developing/Climaapp",
       "tags": ["Javascript", "Sass"]
+    },
+    {
+      "title": "NPM Discord Images",
+      "description": "Biblioteca de imágenes para Discord",
+      "year": "2022",
+      "link": "https://www.npmjs.com/package/discord-imgs",
+      "image": "npmpreview",
+      "github": "https://github.com/gt-developing/npm-discord-imgs",
+      "tags": ["Javascript", "Sass"]
+    },
+    {
+      "title": "Max's Portfolio",
+      "description": "Portafolio profesional personal",
+      "year": "2024",
+      "link": "https://gt-dev-portfolio.netlify.app",
+      "image": "portfoliopreview",
+      "github": "",
+      "tags": ["React", "Vite", "NodeJS", "Spline"]
     }
   ]
