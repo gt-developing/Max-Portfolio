@@ -118,43 +118,36 @@ const Presentation = () => {
           <p>Frameworks y herramientas fundamentales de mi día a día en el desarrollo de aplicaciones web.</p>
         </div>
         <div className='tech-container'>
-        <div className='tech-scroll'>
-            {technologies.concat(technologies).map((tech, index) => (
-              <div className='tech-card' key={index}>
-                {tech.icon}
-                <p>{tech.name}</p>
-              </div>
-            ))}
-          </div>
           <div className='tech-scroll'>
-            {technologies.concat(technologies).map((tech, index) => (
+            {technologies.map((tech, index) => (
               <div className='tech-card' key={index}>
                 {tech.icon}
                 <p>{tech.name}</p>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
       <section className='contact' id='contact'>
-      <div className='section-title'>
-          <h1>¿Interesado?</h1>  
+        <div className='section-title'>
+          <h1>¿Interesado?</h1>
         </div>
         <a className='contact-button' target="_blank" href="mailto:balexismaximiliano@gmail.com">Contactame</a>
       </section>
-      
+
       <section className='footer'>
-      <p>Diseñado y desarrollado por <u>Max</u></p>
-      <div className='redes'>
-            <a target='_blank' href="https://github.com/gt-developing"><FaGithub className='icon' /></a>
-            <a target='_blank' href="https://www.instagram.com/max_gtdev/"><FaInstagram className='icon' /></a>
-            <a target='_blank' href="mailto:balexismaximiliano@gmail.com"> <MdEmail className='icon' /></a>
-          </div>
-    </section>
+        <p>Diseñado y desarrollado por <u>Max</u></p>
+        <div className='redes'>
+          <a target='_blank' href="https://github.com/gt-developing"><FaGithub className='icon' /></a>
+          <a target='_blank' href="https://www.instagram.com/max_gtdev/"><FaInstagram className='icon' /></a>
+          <a target='_blank' href="mailto:balexismaximiliano@gmail.com"> <MdEmail className='icon' /></a>
+        </div>
+      </section>
     </div>
 
-    
+
   );
 }
 

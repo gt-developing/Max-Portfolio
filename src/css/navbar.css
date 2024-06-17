@@ -10,9 +10,7 @@
     backdrop-filter: blur(3px);
 }
 
-.navbar.hidden {
-    transform: translateY(-100%);
-  }
+
 
 .nav-links {
     display: flex;
@@ -142,7 +140,7 @@
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 580px) {
     .navbar {
         padding: 2rem 2rem;
     }
