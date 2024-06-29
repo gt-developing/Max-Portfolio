@@ -8,8 +8,4 @@
     
   }
 
-  @media (max-width: 800px) {
-    .spline-container {
-      display: none;
-    }
-}
+
