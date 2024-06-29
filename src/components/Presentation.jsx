@@ -12,10 +12,8 @@ import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 
-// Importa el archivo JSON
 import projectsData from '../json/projects.json';
 
-// Asocia las imágenes a los nombres de los archivos
 const images = {
   graffpreview,
   todopreview,
@@ -24,7 +22,7 @@ const images = {
   portfoliopreview
 };
 
-// Define las tecnologías
+
 const technologies = [
   { icon: <FaReact className='icon-card' />, name: 'React' },
   { icon: <FaBootstrap className='icon-card' />, name: 'Bootstrap' },
@@ -39,14 +37,13 @@ const technologies = [
   { icon: <GrMysql className='icon-card' />, name: 'MySQL' }
 ];
 
-// Función para mezclar un array
 
 
 const Presentation = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    // Asigna los datos del JSON al estado
+   
     setProjects(projectsData);
   }, []);
 
@@ -55,10 +52,6 @@ const Presentation = () => {
   return (
     <div className='pre-container'>
       <section>
-        <div className='background'>
-          <div id='stars'></div>
-          <div id='stars2'></div>
-        </div>
         <div className='info'>
           <h1>Hola, soy Max</h1>
           <p>Desarrollador web especializado en crear aplicaciones modernas y eficientes con React y Node.js. Apasionado por el diseño funcional y la experiencia del usuario.</p>
