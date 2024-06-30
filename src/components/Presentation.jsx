@@ -11,6 +11,7 @@ import { GrMysql } from "react-icons/gr";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
+import { SiGnubash } from "react-icons/si";
 
 import projectsData from '../json/projects.json';
 
@@ -34,7 +35,9 @@ const technologies = [
   { icon: <IoLogoFirebase className='icon-card' />, name: 'Firebase' },
   { icon: <IoLogoJavascript className='icon-card' />, name: 'Javascript' },
   { icon: <FaPython className='icon-card' />, name: 'Python' },
-  { icon: <GrMysql className='icon-card' />, name: 'MySQL' }
+  { icon: <GrMysql className='icon-card' />, name: 'MySQL' },
+  { icon: <FaGitAlt className='icon-card' />, name: 'Git' },
+  { icon: <SiGnubash className='icon-card' />, name: 'Bash' },
 ];
 
 
@@ -107,7 +110,7 @@ const Presentation = () => {
 
       <section className='tech' id='tech'>
         <div className='section-title'>
-          <h1>Tecnologias</h1>
+          <h1>Skills</h1>
           <p>Frameworks y herramientas fundamentales de mi día a día en el desarrollo de aplicaciones web.</p>
         </div>
         <div className='tech-container'>

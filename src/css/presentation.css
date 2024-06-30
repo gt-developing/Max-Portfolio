@@ -160,10 +160,9 @@ h1 {
 }
 
 .card {
-  flex: 1 0 300px;
-
-  min-width: 270PX;
-
+  flex: 1 0 30%;
+  min-width: 250px;
+  
 }
 
 .info-container {
@@ -216,9 +215,9 @@ h1 {
 img {
   width: 100%;
   transition: .3s ease-in-out all;
-  box-shadow: rgba(255, 255, 255, 0.133) 0px 0.60219px 0.60219px -1.16667px, rgba(28, 29, 33, 0.12) 0px 2.28853px 2.28853px -2.33333px, rgba(28, 29, 33, 0.06) 0px 10px 10px -3.5px, rgba(223, 224, 225, 0.3) 0px 0px 0px 0px;
   margin-bottom: 1rem;
   aspect-ratio: 16 / 9;
+
 }
 
 img:hover {
@@ -244,10 +243,14 @@ img:hover {
     padding: 2rem 2rem;
   }
 
+}
+
+
+@media (max-width: 1200px) {
+ 
   .tech-scroll {
     padding: 0rem 0rem;
   }
-
 
 
 }
