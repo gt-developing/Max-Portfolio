@@ -4,7 +4,7 @@ import "../css/spline.css"
 export default function App() {
   return (
     <div>
-      <Spline scene="https://prod.spline.design/0LFs292GS-DDASVY/scene.splinecode" className="spline-container"/>
+      <Spline scene="https://draft.spline.design/x-AVVDj4fXUoGR3j/scene.splinecode" className="spline-container"/>
     </div>
         
   );
