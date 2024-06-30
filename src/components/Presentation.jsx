@@ -11,7 +11,8 @@ import { GrMysql } from "react-icons/gr";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
-import { SiGnubash } from "react-icons/si";
+import { SiGnubash, SiVite } from "react-icons/si";
+
 
 import projectsData from '../json/projects.json';
 
@@ -38,6 +39,7 @@ const technologies = [
   { icon: <GrMysql className='icon-card' />, name: 'MySQL' },
   { icon: <FaGitAlt className='icon-card' />, name: 'Git' },
   { icon: <SiGnubash className='icon-card' />, name: 'Bash' },
+  { icon: <SiVite className='icon-card' />, name: 'Vite' },
 ];
 
 
