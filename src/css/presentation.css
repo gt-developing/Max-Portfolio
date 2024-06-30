@@ -98,7 +98,7 @@ h1 {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 1rem;
+  padding: 0rem 8rem;
 }
 
 .tech-card {
@@ -243,4 +243,11 @@ img:hover {
   section {
     padding: 2rem 2rem;
   }
+
+  .tech-scroll {
+    padding: 0rem 0rem;
+  }
+
+
+
 }
